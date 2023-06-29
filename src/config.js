@@ -1,4 +1,5 @@
 // in config.js
+import React from 'react';
 import { createChatBotMessage } from 'react-chatbot-kit';
 //import { BsRobot } from 'react-icons/bs';
 //import MyCustomAvatar from '../components/MyCustomAvatar';

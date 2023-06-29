@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-
+import logoImage from '../../../public/img/logo.jpg';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
@@ -15,28 +15,16 @@ export const NavbarComponent = () => {
         <Container>
           <Navbar.Brand>
             <Link to="/">
-              <img src={process.env.PUBLIC_URL + '/img/logo.jpg'} alt="Logo" className='logo-img' />
+              <img src={logoImage} alt="Logo" className='logo-img' />
             </Link>
           </Navbar.Brand>
           <Nav className="centered-links">
-            <Nav.Link>
-              <Link to="/" className="nav-link-styled">Lar</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/about" className="nav-link-styled">Sobre</Link>
-            </Nav.Link>
-            <Nav.Link href="#features2">
-              <a href="#" className="nav-link-styled">Menu</a>
-            </Nav.Link>
-            <Nav.Link href="#pricing">
-              <a href="#" className="nav-link-styled">preços</a>
-            </Nav.Link>
-            <Nav.Link href="#pricing">
-              <a href="#" className="nav-link-styled">Blog</a>
-            </Nav.Link>
-            {/*<Nav.Link href="#login">
-              <a href="#" className="nav-link-styled">Login</a>
-            </Nav.Link>*/}
+            <Nav.Link as={Link} to="/" className="nav-link-styled">Lar</Nav.Link>
+            <Nav.Link as={Link} to="/about" className="nav-link-styled">Sobre</Nav.Link>
+            <Nav.Link as={Link} to="/features2" className="nav-link-styled">Menu</Nav.Link>
+            <Nav.Link as={Link} to="/pricing" className="nav-link-styled">preços</Nav.Link>
+            <Nav.Link as={Link} to="/pricing2" className="nav-link-styled">preços</Nav.Link>
+            {/*<Nav.Link as={Link} to="/pricing3" className="nav-link-styled">preços</Nav.Link>*/}
             <Nav.Link className="ml-auto">
             </Nav.Link>
           </Nav>

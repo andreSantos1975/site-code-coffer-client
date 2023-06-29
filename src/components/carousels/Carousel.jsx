@@ -1,6 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './Carousel.css'; // Importe o arquivo CSS
+import './Carousel.css'; 
+import img1 from '../../../public/img/carousel1.jpg'
+import img2 from '../../../public/img/carousel4.jpg'
+import img3 from '../../../public/img/carousel3.jpg'
 
 function CarouselComponent() {
 
@@ -14,7 +17,7 @@ function CarouselComponent() {
         <Carousel.Item>
           <img
             className="d-block carousel-image" // Aplica a classe carousel-image
-            src={process.env.PUBLIC_URL + '/img/carousel1.jpg'}
+            src={img1}
             alt="First slide"
             onClick={handleImageClick}
           />
@@ -26,7 +29,7 @@ function CarouselComponent() {
         <Carousel.Item>
           <img
             className="d-block carousel-image" // Aplica a classe carousel-image
-            src={process.env.PUBLIC_URL + '/img/carousel4.jpg'}
+            src={img2}
             alt="Second slide"
             onClick={handleImageClick}
           />
@@ -38,7 +41,7 @@ function CarouselComponent() {
         <Carousel.Item>
           <img
             className="d-block carousel-image" // Aplica a classe carousel-image
-            src={process.env.PUBLIC_URL + '/img/carousel3.jpg'}
+            src={img3}
             alt="Third slide"
             onClick={handleImageClick}
           />

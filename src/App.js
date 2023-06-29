@@ -1,3 +1,4 @@
+import React from 'react';
 //import Carousel from './components/carousels/Carousel';
 import './App.css';
 import MyComponent from './react-chatbot-kit/MyComponent';
