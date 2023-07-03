@@ -19,14 +19,16 @@ function App() {
     <div className="App">
       <MyComponent />
 
-
+       {/*Os LINKS estão no componente Navbar*/}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/prices' element={<Prices />} />
-        <Route path='/area_reservada' 
-               element={
-                  logado ? <AreaReservada /> : <Navigate to='/' />} />
+        <Route path='/prices'
+          element={
+            logado ? <Prices /> : <Navigate to='/' />} />
+        <Route path='/area_reservada'
+          element={
+            logado ? <AreaReservada /> : <Navigate to='/' />} />
       </Routes>
     </div>
   );

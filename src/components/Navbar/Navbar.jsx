@@ -28,7 +28,7 @@ export const NavbarComponent = () => {
             <Nav.Link className="ml-auto">
             </Nav.Link>
           </Nav>
-          <Button variant="warning" className="btn-extra-small btn-rounded" style={{ marginRight: '10px' }}>Cadastro</Button>
+          <Button variant="warning" className="btn-extra-small btn-rounded" style={{ marginRight: '10px' }}>Login</Button>
         </Container>
       </Navbar>
     </div>
