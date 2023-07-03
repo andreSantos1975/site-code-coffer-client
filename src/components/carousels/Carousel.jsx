@@ -34,8 +34,8 @@ function CarouselComponent() {
             onClick={handleImageClick}
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3></h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -46,8 +46,8 @@ function CarouselComponent() {
             onClick={handleImageClick}
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>O Futuro da Internet</h3>
+            <p>A inteligência artificial veio para mudar a produtividade das pessoas.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
