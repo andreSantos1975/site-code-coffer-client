@@ -1,20 +1,16 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
 //import Carousel from './components/carousels/Carousel';
 import './App.css';
 import MyComponent from './react-chatbot-kit/MyComponent';
-import { useState } from 'react';
+import { About } from './components/pages/About';
 
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/pages/Home';
 import { AreaReservada } from './components/pages/AreaReservada';
 import { Prices } from './components/pages/Prices';
-import { About } from './components/pages/About';
 
 
 function App() {
-
-  const [logado] = useState(true);
   return (
     <div className="App">
       <MyComponent />
@@ -24,9 +20,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/prices' element={<Prices />} />
-        <Route path='/area_reservada' 
-               element={
-                  logado ? <AreaReservada /> : <Navigate to='/' />} />
+
+
+        <Route path='/area_reservada' element={<AreaReservada />} />
       </Routes>
     </div>
   );

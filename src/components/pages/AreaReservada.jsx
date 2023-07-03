@@ -3,7 +3,7 @@ import './About.css'
 import videoAbout from '../../../public/videos/contato.mp4'
 
 
-export const About = () => {
+export const AreaReservada = () => {
     return (
       <section id='about'>
         <div className='container' style={{ height: '500px' }}>
@@ -13,10 +13,10 @@ export const About = () => {
               <video src={videoAbout} controls className='video' style={{ width: '100%', height: '100%', cursor: 'pointer', marginTop: '100px' }} />
             </div>
             <div className='col-lg-5' style={{ marginTop: '100px', marginLeft: '73px' }}>
-              <h1>O futuro das Empresas</h1>
+              <h1>Área Reservada</h1>
               <div className='divder'></div>
-              <p>"Faça parte da evolução tecnológica.</p>
-              <p>Não seja uma das empresas que deixarão de existir. Nas próximas décadas, milhões de empresas correm o risco de desaparecer por não se adaptarem às novas formas de se relacionar com os clientes."</p>
+              <p>"Área Reservada Para Membros.</p>
+              <p>Comunidade dedicada para o crescimento da Nação."</p>
               <button className='button'>Entre em contato</button>
             </div>
           </div>
