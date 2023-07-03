@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-//import Carousel from './components/carousels/Carousel';
 import './App.css';
 import MyComponent from './react-chatbot-kit/MyComponent';
 import { useState } from 'react';
@@ -8,7 +7,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/pages/Home';
 import { AreaReservada } from './components/pages/AreaReservada';
-import { Prices } from './components/pages/Prices';
+import { Prices_Form } from './components/pages/Prices_Form';
 import { About } from './components/pages/About';
 
 
@@ -23,9 +22,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/prices'
+        <Route path='/prices_form'
           element={
-            logado ? <Prices /> : <Navigate to='/' />} />
+            logado ? <Prices_Form /> : <Navigate to='/' />} />
         <Route path='/area_reservada'
           element={
             logado ? <AreaReservada /> : <Navigate to='/' />} />

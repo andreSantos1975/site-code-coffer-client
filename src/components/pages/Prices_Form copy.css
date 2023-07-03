@@ -1,0 +1,129 @@
+:root {
+  --cor-white: #f2f2f2;
+  --cor-gray: #f0f2f5;
+  --cor-yelow: #f29100;
+  --cor-yelow2: #ffd863;
+  --cor-dark: #33322c;
+  --cor-green: #17be2a;
+  --cor-blue: #4739e0;
+}
+
+
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  background-color: var(--cor-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.content-login {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-login-box {
+  background-color: var(--cor-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inputs {
+  padding: 7px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1px solid var(--cor-yelow2);
+  outline: none;
+  width: 90%;
+  font-size: 17px;
+  color: var(--cor-dark);
+}
+
+.inputs:focus {
+  border-color: var(--cor-green);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  padding: 10px 20px;
+  /* Ajuste o valor do padding conforme desejado */
+  border: none;
+  color: var(--cor-gray);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.5rem;
+  transition: .2s;
+}
+
+.btn-enter {
+  background-color: var(--cor-yelow);
+}
+
+.btn-create-account {
+  background-color: var(--cor-yelow);
+  width: auto;
+  padding: 5px 10px;
+
+}
+
+.btn-enter:hover,
+.btn-create-account:hover {
+  background-color: var(--cor-yelow2);
+  /* Cor de fundo ao passar o mouse */
+  color: var(--cor-blue);
+  /* Cor do texto ao passar o mouse */
+  /* Outras propriedades desejadas para o efeito hover */
+}
+
+a {
+  color: var(--cor-yelow2);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--cor-gray);
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  color: var(--cor-blue);
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 50;
+  color: var(--cor-blue);
+
+}

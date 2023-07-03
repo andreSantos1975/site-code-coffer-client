@@ -3,7 +3,7 @@ import './About.css'
 import videoAbout from '../../../public/videos/contato.mp4'
 
 
-export const Prices = () => {
+export const Prices_Form = () => {
     return (
       <section id='about'>
         <div className='container' style={{ height: '500px' }}>

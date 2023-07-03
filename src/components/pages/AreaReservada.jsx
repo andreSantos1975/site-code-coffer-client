@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
 import videoAbout from '../../../public/videos/contato.mp4'
+//import  imgReservada from '../../../public/img/carousel4.jpg'
+import './AreaReservada.css'
 
 
 export const AreaReservada = () => {
@@ -9,7 +11,7 @@ export const AreaReservada = () => {
         <div className='container' style={{ height: '500px' }}>
           <div className='row'>
             <div className='col-lg-5'>
-              {/*<img src={process.env.PUBLIC_URL + '/img/assistente.png'} alt="Logo" className='logo-img' style={{ width: '220px', height: '320px', cursor: 'pointer', marginTop: '100px' }} />}*/}
+              {/*<img src={imgReservada} alt="Logo" className='logo-img' style={{ width: '220px', height: '320px', cursor: 'pointer', marginTop: '100px' }} />}*/}
               <video src={videoAbout} controls className='video' style={{ width: '100%', height: '100%', cursor: 'pointer', marginTop: '100px' }} />
             </div>
             <div className='col-lg-5' style={{ marginTop: '100px', marginLeft: '73px' }}>
