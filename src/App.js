@@ -6,9 +6,10 @@ import { useState } from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/pages/Home';
-import { AreaReservada } from './components/pages/AreaReservada';
-import { Prices_Form } from './components/pages/Prices_Form';
+//import { AreaReservada } from './components/pages/AreaReservada';
 import { About } from './components/pages/About';
+import { Login } from './components/pages/login/Login';
+
 
 
 function App() {
@@ -18,16 +19,17 @@ function App() {
     <div className="App">
       <MyComponent />
 
-       {/*Os LINKS estão no componente Navbar*/}
+      {/*Os LINKS estão no componente Navbar*/}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/prices_form'
+
+
+     
+        <Route path='/login'
           element={
-            logado ? <Prices_Form /> : <Navigate to='/' />} />
-        <Route path='/area_reservada'
-          element={
-            logado ? <AreaReservada /> : <Navigate to='/' />} />
+            logado ? <Login /> : <Navigate to='/' />} />
+
       </Routes>
     </div>
   );

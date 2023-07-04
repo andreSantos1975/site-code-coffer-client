@@ -1,0 +1,32 @@
+.chatbot-icon {
+    position: fixed;
+    left: 1160px; /* Altere o valor para um número negativo para mover para a esquerda */
+    color: rgb(128, 128, 128);
+  }
+  
+  
+  
+  .chatbox {
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 200px;
+    top: 60px;
+    width: 150px;
+    /* Defina a largura desejada */
+    height: 200px;
+    /* Defina a altura desejada */
+    background-color: yellow;
+  }
+  
+  .chatbox.hidden {
+    display: none;
+  }
+  
+  .logo-img {
+    top: 23px;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    margin-right: -46px;
+  }

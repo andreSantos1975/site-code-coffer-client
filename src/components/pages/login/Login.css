@@ -8,26 +8,36 @@
   --cor-blue: #4739e0;
 }
 
-
 body {
   font-family: Arial, Arial, Helvetica, sans-serif;
   background-color: var(--cor-gray);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 90vh;
 }
 
+
 .content {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 64px;
-  width: 100%;
-  max-width: 800px;
-
+ /* justify-content: center;*/
+ /* align-items: center;*/
+ /* flex-wrap: wrap;*/
+  margin-top: 150px;
+  /*width: 100%;*/
+  max-width: 1050px;
 }
+
+
+.content-container {
+  margin-left: 150px; /* Ajuste o valor conforme necessário */
+}
+
+
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 
 .content-login {
   width: 400px;
@@ -66,14 +76,14 @@ body {
 }
 
 .btn {
-  padding: 10px 20px;
-  /* Ajuste o valor do padding conforme desejado */
-  border: none;
-  color: var(--cor-gray);
-  border-radius: 5px;
-  width: 100%;
-  font-size: 1.5rem;
-  transition: .2s;
+   /* padding: 10px 20px;*/
+    /* Ajuste o valor do padding conforme desejado */
+    border: none;
+    color: var(--cor-gray);
+    border-radius: 5px;
+   /* width: 100%;*/
+    font-size: 1.1rem;
+    transition: .2s;
 }
 
 .btn-enter {
@@ -89,11 +99,11 @@ body {
 
 .btn-enter:hover,
 .btn-create-account:hover {
-  background-color: var(--cor-yelow2);
-  /* Cor de fundo ao passar o mouse */
-  color: var(--cor-blue);
-  /* Cor do texto ao passar o mouse */
-  /* Outras propriedades desejadas para o efeito hover */
+    background-color: var(--cor-yelow2);
+    /* Cor de fundo ao passar o mouse */
+    color: var(--cor-blue);
+    /* Cor do texto ao passar o mouse */
+    /* Outras propriedades desejadas para o efeito hover */
 }
 
 a {

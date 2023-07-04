@@ -21,9 +21,10 @@ export const NavbarComponent = () => {
           <Nav className="centered-links">
             <Nav.Link as={Link} to="/" className="nav-link-styled">Lar</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-link-styled">Sobre</Nav.Link>
-            <Nav.Link as={Link} to="/" className="nav-link-styled">Menu</Nav.Link>
-            <Nav.Link as={Link} to="/prices_form" className="nav-link-styled">Preços</Nav.Link>
-            <Nav.Link as={Link} to="/area_reservada" className="nav-link-styled">Blog</Nav.Link>
+            
+           
+            <Nav.Link as={Link} to="/login" className="nav-link-styled">Blog</Nav.Link>
+            {/*<Nav.Link as={Link} to="/pricing3" className="nav-link-styled">preços</Nav.Link>*/}
             {/*<Nav.Link as={Link} to="/pricing3" className="nav-link-styled">preços</Nav.Link>*/}
             <Nav.Link className="ml-auto">
             </Nav.Link>
