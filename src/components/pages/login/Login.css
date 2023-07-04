@@ -11,7 +11,7 @@
 body {
   font-family: Arial, Arial, Helvetica, sans-serif;
   background-color: var(--cor-gray);
-  height: 90vh;
+  height: 70vh;
 }
 
 
@@ -27,6 +27,7 @@ body {
 
 
 .content-container {
+  
   margin-left: 150px; /* Ajuste o valor conforme necessário */
 }
 
@@ -60,9 +61,9 @@ body {
 }
 
 .inputs {
-  padding: 7px;
+  padding: 20px;
   height: 22px;
-  border-radius: 6px;
+  border-radius: 9px;
   border: 1px solid var(--cor-yelow2);
   outline: none;
   width: 90%;
@@ -87,11 +88,11 @@ body {
 }
 
 .btn-enter {
-  background-color: var(--cor-yelow);
+  background-color: var(--cor-dark);
 }
 
 .btn-create-account {
-  background-color: var(--cor-yelow);
+  background-color: var(--cor-dark);
   width: auto;
   padding: 5px 10px;
 
@@ -101,7 +102,7 @@ body {
 .btn-create-account:hover {
     background-color: var(--cor-yelow2);
     /* Cor de fundo ao passar o mouse */
-    color: var(--cor-blue);
+    color: var(--cor-dark);
     /* Cor do texto ao passar o mouse */
     /* Outras propriedades desejadas para o efeito hover */
 }
