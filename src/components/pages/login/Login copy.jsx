@@ -24,9 +24,8 @@ export const Login = () => {
     console.log('Password:', password);
 
     try {
-
       // Fazendo a requisição para a rota de login no backend
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,7 +35,6 @@ export const Login = () => {
           password,
         }),
       });
-      
 
       if (response.ok) {
         // Login bem-sucedido, faça algo com a resposta
@@ -46,7 +44,6 @@ export const Login = () => {
         // Login inválido, faça algo com a resposta de erro
         const errorData = await response.json();
         console.error(errorData.message);
-        console.log('Console no frontend Login errorData:', errorData)
       }
 
       // Redefinindo os campos de entrada para os valores vazios
@@ -69,7 +66,7 @@ export const Login = () => {
               <input
                 type='text'
                 className='inputs'
-                placeholder='Email'
+                placeholder='Email ou telefone'
                 value={email}
                 onChange={handleEmailChange}
               />
