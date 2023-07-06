@@ -1,0 +1,86 @@
+:root {
+    --cor-white: #f2f2f2;
+    --cor-gray: #f0f2f5;
+    --cor-yelow: #f29100;
+    --cor-yelow2: #ffd863;
+    --cor-dark: #33322c;
+    --cor-green: #17be2a;
+    --cor-blue: #4739e0;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, var(--cor-gray), #e9dede);
+
+
+}
+
+/* A cor das letras do formulário esta no .box */
+.box {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(203, 196, 255);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    letter-spacing: 4px;
+}
+
+/* Efeito quando clica no input */
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 14px;
+    color: rgb(255, 255, 255)
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#submit {
+    background-color: var(--cor-yelow);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: var(--cor-yelow2);
+    color: #000000;
+}

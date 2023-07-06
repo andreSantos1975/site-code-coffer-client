@@ -1,12 +1,11 @@
-import React from 'react';
-import { useState } from 'react';
-
+import React, { useState } from 'react';
 import './Login.css';
-
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [responseMessage, setResponseMessage] = useState('');
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -19,13 +18,7 @@ export const Login = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    // Adicione o console log para verificar os valores do email e password
-    console.log('Email:', email);
-    console.log('Password:', password);
-
     try {
-
-      // Fazendo a requisição para a rota de login no backend
       const response = await fetch('http://localhost:5000/login', {
         method: 'POST',
         headers: {
@@ -36,20 +29,15 @@ export const Login = () => {
           password,
         }),
       });
-      
 
       if (response.ok) {
-        // Login bem-sucedido, faça algo com a resposta
         const data = await response.json();
-        console.log(data.message);
+        setResponseMessage(data.message);
       } else {
-        // Login inválido, faça algo com a resposta de erro
         const errorData = await response.json();
-        console.error(errorData.message);
-        console.log('Console no frontend Login errorData:', errorData)
+        setResponseMessage(errorData.message);
       }
 
-      // Redefinindo os campos de entrada para os valores vazios
       setEmail('');
       setPassword('');
     } catch (error) {
@@ -57,14 +45,13 @@ export const Login = () => {
     }
   };
 
-
   return (
     <>
-
       <div className='content-container'>
-        <div className='content center-content'>
-          <h1>Inscreva-se e tenha  uma prévia do orçamento</h1>
+        <div className='content center-content' style={{ marginTop: '85px' }}>
+
           <div className='content-login'>
+            <h1>Inscreva-se e tenha uma prévia do orçamento</h1>
             <form className='content-login-box form-box'>
               <input
                 type='text'
@@ -85,14 +72,23 @@ export const Login = () => {
                 Entrar
               </button>
 
-              <a href='#' className='fogot-password'>Esqueceu a senha?</a>
+              {responseMessage && <p className='response-message text-white'>{responseMessage}</p>}
+
+              <a href='#' className='fogot-password'>
+                Esqueceu a senha?
+              </a>
               <hr />
-              <button className='btn btn-create-account'>Inscreva-se</button>
+              <Link to='/formulario' className='btn btn-enter'>
+                Inscreva-se
+              </Link>
+
             </form>
-            <p><strong>Crie um site</strong> e fortaleça a marca da sua empresa</p>
+            <p>
+              <strong>Crie um site</strong> e fortaleça a marca da sua empresa
+            </p>
           </div>
         </div>
       </div>
     </>
   );
-}
+};

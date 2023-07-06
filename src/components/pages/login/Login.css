@@ -25,13 +25,9 @@ body {
   max-width: 1050px;
 }
 
-
 .content-container {
-  
-  margin-left: 150px; /* Ajuste o valor conforme necessário */
+   margin-left: 150px; /* Ajuste o valor conforme necessário */
 }
-
-
 
 .center-content {
   display: flex;
@@ -39,13 +35,16 @@ body {
   flex-wrap: wrap;
 }
 
-
 .content-login {
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.text-white {
+  color: white;
 }
 
 .content-login-box {
@@ -92,7 +91,7 @@ body {
 }
 
 .btn-create-account {
-  background-color: var(--cor-dark);
+  background-color: var(--cor-yelow);
   width: auto;
   padding: 5px 10px;
 
@@ -128,7 +127,7 @@ p {
 }
 
 h1 {
-  color: var(--cor-blue);
+  color: var(--cor-dark);
   font-size: 2rem;
 }
 
