@@ -26,7 +26,8 @@ export const Formulario = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5000/enviar', {
+            console.log('Dados a serem enviados do formulário para :', formData); // Log dos dados antes do envio
+            const response = await fetch('http://localhost:5000/formulario/enviar', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -48,7 +49,7 @@ export const Formulario = () => {
     };
     return (
         <div className='box'>
-            <form action=''>
+           <form onSubmit={handleSubmit}>
                 <fieldset>
                     <legend><b>Formulário prévia de preços</b></legend>
                     <br />
