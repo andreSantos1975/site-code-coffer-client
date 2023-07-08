@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-export const Login = () => {
+
+
+export const Login = ({ setLogado, onSignOut }) => {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
+
+  const handleSignOut = () => {
+    // Realize a lógica de "Sign Out" aqui, como limpar o estado, remover tokens de autenticação, etc.
+    setLogado(false);
+    onSignOut();
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -33,6 +44,8 @@ export const Login = () => {
       if (response.ok) {
         const data = await response.json();
         setResponseMessage(data.message);
+        setLogado(true); // Atualizar o estado logado para true
+        navigate('/'); // Redirecionar para a rota principal após o login
       } else {
         const errorData = await response.json();
         setResponseMessage(errorData.message);
@@ -81,6 +94,8 @@ export const Login = () => {
               <Link to='/formulario' className='btn btn-enter'>
                 Inscreva-se
               </Link>
+
+            
 
             </form>
             <p>
