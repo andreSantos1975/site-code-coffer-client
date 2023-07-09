@@ -1,6 +1,6 @@
 .chatbot-icon {
     position: fixed;
-    left: 1160px; /* Altere o valor para um número negativo para mover para a esquerda */
+    left: 1170px; /* Mover o ícone chatbot para a esquerda */
     color: rgb(128, 128, 128);
   }
   

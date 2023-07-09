@@ -61,7 +61,7 @@ export const Login = ({ setLogado, onSignOut }) => {
   return (
     <>
       <div className='content-container'>
-        <div className='content center-content' style={{ marginTop: '85px' }}>
+        <div className='content center-content' style={{ marginTop: '68px' }}>
 
           <div className='content-login'>
             <h1>Inscreva-se e tenha uma prévia do orçamento</h1>

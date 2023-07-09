@@ -46,6 +46,7 @@ img {
     padding: 14px 38px;
 }
 
+/* A cor do texto do botão Entrar no navbar é aplicado no  Login.css na classeName .btn*/
 .btn-brand {
     color: aliceblue;
     background-color: rgb(255, 169, 40);
@@ -70,7 +71,7 @@ img {
   /* hover do texto botão entrar e hover no botão no navbar */
   .btn-rounded:hover {
     color: rgb(207, 190, 31);
-    background-color: rgb(239, 242, 102);
+    background-color: rgb(248, 246, 115);
   }
   
 

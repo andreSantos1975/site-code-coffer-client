@@ -30,7 +30,7 @@ const MyComponent = () => {
 
       <div className='chatbot-icon' onClick={handleClick}>
         {/* Ícone do chatbot */}
-        <img src={chatbotImage} alt="balao-chatbot" className='logo-img' style={{ width: '65px', height: '65px', cursor: 'pointer', marginRight: '6px', marginTop: '-20px', zIndex: '999' }} />
+        <img src={chatbotImage} alt="balao-chatbot" className='logo-img' style={{ width: '65px', height: '70px', cursor: 'pointer', marginRight: '1px', marginTop: '-20px', zIndex: '999' }} />
       </div>
     </div>
   );
