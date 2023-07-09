@@ -46,8 +46,8 @@ function CarouselComponent() {
             onClick={handleImageClick}
           />
           <Carousel.Caption>
-            <h3>O Futuro da Internet</h3>
-            <p>A inteligência artificial veio para mudar a produtividade das pessoas.</p>
+            <h3>O Futuro das Empresas</h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

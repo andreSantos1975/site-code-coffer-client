@@ -30,7 +30,7 @@
     margin: 0 30px;
 }
 
-
+/* hover dos links do menu navbar */
 .nav-link-styled:hover {
     color: rgb(222, 127, 18);
     font-weight: 600;
@@ -54,7 +54,7 @@ img {
 }
 
 .btn-brand:hover {
-    background-color: rgb(255, 204, 128);
+    background-color: rgb(246, 218, 176);
     border-color: rgb(255, 188, 88);
     color: aliceblue;
 }
@@ -65,6 +65,12 @@ img {
     border-radius: 20px; 
     padding: 5px 10px;
     font-size: 12px;
+  }
+  
+  /* hover do texto botão entrar e hover no botão no navbar */
+  .btn-rounded:hover {
+    color: rgb(207, 190, 31);
+    background-color: rgb(239, 242, 102);
   }
   
 
