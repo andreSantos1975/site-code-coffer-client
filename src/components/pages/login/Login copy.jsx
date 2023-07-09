@@ -3,12 +3,17 @@ import './Login.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-export const Login = ({ setLogado }) => {
+export const Login = ({ setLogado, onSignOut }) => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
+
+  const handleSignOut = () => {
+    setLogado(false);
+    onSignOut();
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);

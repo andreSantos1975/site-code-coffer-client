@@ -17,7 +17,7 @@ body {
 
 /* A cor das letras do formulário esta no .box */
 .box {
-    position: absolute;
+    position: relative;
     top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);

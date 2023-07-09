@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 
+// NavbarComponent é chamado do MyComponent.jsx no diretório react-chatbot-kit
 export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
   const navigate = useNavigate();
 
@@ -25,7 +26,7 @@ export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
     } else {
       return (
         <Link to="/login">
-          <Button variant="warning" className="btn-extra-small btn-rounded" style={{ backgroundColor: 'rgb(42, 42, 21)', marginRight: '10px' }}>Entrar</Button>
+          <Button className="btn-extra-small btn-rounded" style={{ backgroundColor: 'rgb(42, 42, 21)', marginRight: '10px' }}>Entrar</Button>
         </Link>
 
       );
