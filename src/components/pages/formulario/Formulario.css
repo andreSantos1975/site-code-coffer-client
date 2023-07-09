@@ -18,12 +18,12 @@ body {
 /* A cor das letras do formulário esta no .box */
 .box {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(203, 196, 255);
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     width: 30%;
 }

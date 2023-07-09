@@ -38,6 +38,13 @@ export const Formulario = () => {
             if (response.ok) {
                 // Dados enviados com sucesso
                 console.log('Dados enviados com sucesso.');
+                setNome('');
+                setEmail('');
+                setTelefone('');
+                setCidade('');
+                setEstado('');
+                setEmpresa('');
+                setAtividade('');
             } else {
                 // Ocorreu um erro no servidor
                 console.error('Erro no servidor ao processar a requisição.');
