@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 
-export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
+export const NavbarComponent = ({ setLogado, onSignOut }) => {
   const navigate = useNavigate();
 
   const handleSignOut = () => {
@@ -15,20 +15,6 @@ export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
     setLogado(false);
     onSignOut();
     navigate('/login');
-  };
-
-  const renderLoginButton = () => {
-    if (logado) {
-      return (
-        <Button variant="primary" className="btn-extra-small btn-rounded" onClick={handleSignOut}>Sair</Button>
-      );
-    } else {
-      return (
-        <Link to="/login">
-          <Button variant="warning" className="btn-extra-small btn-rounded" style={{ marginRight: '10px' }}>Entrar</Button>
-        </Link>
-      );
-    }
   };
 
   return (
@@ -51,9 +37,11 @@ export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
             <Nav.Link className="ml-auto">
             </Nav.Link>
           </Nav>
-      
+          <Link to="/login">
+            <Button variant="warning" className="btn-extra-small btn-rounded" style={{ marginRight: '10px' }}>Login</Button>
+          </Link>
 
-          {renderLoginButton()}
+          <Button onClick={handleSignOut}>Sign out</Button>
 
         </Container>
       </Navbar>

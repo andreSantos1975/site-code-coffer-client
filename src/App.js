@@ -25,7 +25,9 @@ function App() {
   return (
     <div className="App">
       <MyComponent />
-    <NavbarComponent setLogado={setLogado} onSignOut={handleSignOut} />
+      {/*  handleSignOut passada como uma propriedade chamada "onSignOu para o componente NavbarComponent*/}
+      <NavbarComponent logado={logado} setLogado={setLogado} onSignOut={handleSignOut} />
+
    
       {/*Os LINKS estão no componente Navbar
       a rota /formulario é chamada em um button no arquivo Login.jsx
