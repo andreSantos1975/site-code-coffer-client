@@ -71,7 +71,7 @@ export const Login = ({ setLogado }) => {
                 onChange={handlePasswordChange}
               />
 
-              <button className='btn btn-enter text-white' onClick={handleFormSubmit}>
+              <button className='btn btn-enter rounded-pill text-white' onClick={handleFormSubmit}>
                 Entrar
               </button>
 
@@ -81,7 +81,7 @@ export const Login = ({ setLogado }) => {
                 Esqueceu a senha?
               </a>
               <hr />
-              <Link to='/formulario' className='btn btn-enter text-white'>
+              <Link to='/formulario' className='btn btn-enter rounded-pill text-white'>
                 Inscreva-se
               </Link>
             </form>

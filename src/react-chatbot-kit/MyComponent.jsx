@@ -6,7 +6,7 @@ import 'react-chatbot-kit/build/main.css';
 import config from '../config';
 import MessageParser from './MessageParser';
 import ActionProvider from './ActionProvider';
-import { NavbarComponent } from '../components/Navbar/Navbar';
+//import { NavbarComponent } from '../components/Navbar/Navbar';
 
 const MyComponent = () => {
   const [showChatbox, setShowChatbox] = useState(false);
@@ -17,7 +17,7 @@ const MyComponent = () => {
 
   return (
     <div>
-      <NavbarComponent />
+      
       
       <div className={`chatbox ${showChatbox ? '' : 'hidden'}`}>
         <Chatbot

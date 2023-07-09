@@ -61,6 +61,25 @@ img {
     color: aliceblue;
 }
 
+.btn-hover {
+    background-color: rgb(61, 54, 42);
+    border-color: rgb(239, 111, 72);
+    color: aliceblue;
+  }
+
+  .btn-hover-sair {
+    background-color: rgb(61, 54, 42);
+    border-color: rgb(235, 70, 5);
+    color: aliceblue;
+  }
+  
+  .btn-hover:hover {
+    /* Defina os estilos de hover aqui */
+    /* Por exemplo, alterar a cor de fundo e a cor do texto */
+    background-color: #000;
+    color: #fff;
+  }
+  
 
 
   .btn-rounded {

@@ -21,12 +21,12 @@ export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
   const renderLoginButton = () => {
     if (logado) {
       return (
-        <Button variant="primary" className="btn-extra-small btn-rounded" style={{ backgroundColor: 'rgb(42, 42, 21)', marginRight: '10px' }} onClick={handleSignOut}>Sair</Button>
+        <Button className="btn-extra-small btn-rounded btn-hover-sair" onClick={handleSignOut}>Sair</Button>
       );
     } else {
       return (
         <Link to="/login">
-          <Button className="btn-extra-small btn-rounded" style={{ backgroundColor: 'rgb(42, 42, 21)', marginRight: '10px' }}>Entrar</Button>
+          <Button className="btn-extra-small btn-rounded btn-hover" >Entrar</Button>
         </Link>
 
       );
