@@ -22,4 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# servidor Node js 
 /site-basico-server1.5
