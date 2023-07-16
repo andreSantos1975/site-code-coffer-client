@@ -5,6 +5,8 @@ import './Formulario.css';
 export const Formulario = () => {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [confirmarSenha, setConfirmarSenha] = useState('');
     const [telefone, setTelefone] = useState('');
     const [cidade, setCidade] = useState('');
     const [estado, setEstado] = useState('');
@@ -23,6 +25,8 @@ export const Formulario = () => {
             estado,
             empresa,
             atividade,
+            senha,
+            confirmarSenha,
         };
 
         try {
@@ -45,6 +49,9 @@ export const Formulario = () => {
                 setEstado('');
                 setEmpresa('');
                 setAtividade('');
+                setSenha('');
+                setConfirmarSenha('');
+
             } else {
                 // Ocorreu um erro no servidor
                 console.error('Erro no servidor ao processar a requisição.');
@@ -56,9 +63,9 @@ export const Formulario = () => {
     };
     return (
         <div className='box'>
-           <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <legend><b>Formulário prévia de preços</b></legend>
+                    <legend><b>Tenha prévia de preços e acesso ao blog da plataforma</b></legend>
                     <br />
                     <div className='inputBox'>
                         <input
@@ -84,6 +91,32 @@ export const Formulario = () => {
                             required
                         />
                         <label htmlFor='email' className='labelInput'>Email</label>
+                    </div>
+                    <br></br>
+                    <div className='inputBox'>
+                        <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            className="inputUser"
+                            value={senha}
+                            onChange={(event) => setSenha(event.target.value)}
+                            required
+                        />
+                        <label htmlFor='senha' className='labelInput'>Senha</label>
+                    </div>
+                    <br></br>
+                    <div className='inputBox'>
+                        <input
+                            type="password"
+                            name="confirmarSenha"
+                            id="confirmarSenha"
+                            className="inputUser"
+                            value={confirmarSenha}
+                            onChange={(event) => setConfirmarSenha(event.target.value)}
+                            required
+                        />
+                        <label htmlFor='confirmarSenha' className='labelInput'>Confirmar Senha</label>
                     </div>
                     <br></br>
                     <div className='inputBox'>
@@ -156,7 +189,7 @@ export const Formulario = () => {
                     <br></br>
                     <input type='submit' name='submit' id='submit' />
                 </fieldset>
-              
+
             </form>
         </div>
     )

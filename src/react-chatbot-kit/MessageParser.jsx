@@ -1,14 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import io from 'socket.io-client';
 
 const socket = io('http://localhost:5000');
 
-//Componente do react-chatbot-kit
+import { LogadoContexto } from '../context/LogadoContexto';
+///Componente do react-chatbot-kit
+
 const MessageParser = ({ children, actions }) => {
+
+  const { logado } = useContext(LogadoContexto);
+  console.log('logado no MessageParser:', logado)
+
   const parse = (message) => {
     console.log('Enviando requisição para o servidor:', message);
     //Fazer uma requisição para o server.js
-     socket.emit('postUser', { message });
+     socket.emit('postUser', { message, logado });
      console.log('Hello World MessageParse.jsx:', message)
     {/*socket.emit('assistant1', { message });*/}
    

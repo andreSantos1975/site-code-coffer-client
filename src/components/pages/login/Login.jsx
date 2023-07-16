@@ -7,7 +7,7 @@ export const Login = ({ setLogado }) => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [senha, setSenha] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
 
   const handleEmailChange = (e) => {
@@ -15,7 +15,7 @@ export const Login = ({ setLogado }) => {
   };
 
   const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
+    setSenha(e.target.value);
   };
 
   const handleFormSubmit = async (e) => {
@@ -29,7 +29,7 @@ export const Login = ({ setLogado }) => {
         },
         body: JSON.stringify({
           email,
-          password,
+          senha,
         }),
       });
 
@@ -44,7 +44,7 @@ export const Login = ({ setLogado }) => {
       }
 
       setEmail('');
-      setPassword('');
+      setSenha('');
     } catch (error) {
       console.error('Erro ao fazer login:', error);
     }
@@ -67,7 +67,7 @@ export const Login = ({ setLogado }) => {
                 type='password'
                 className='inputs'
                 placeholder='Senha'
-                value={password}
+                value={senha}
                 onChange={handlePasswordChange}
               />
 

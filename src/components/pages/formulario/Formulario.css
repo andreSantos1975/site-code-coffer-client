@@ -18,7 +18,7 @@ body {
 /* A cor das letras do formulário esta no .box */
 .box {
     position: relative;
-    top: 400px;
+    top: 450px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -27,6 +27,7 @@ body {
     border-radius: 15px;
     width: 30%;
 }
+
 
 fieldset {
     border: 3px solid dodgerblue;

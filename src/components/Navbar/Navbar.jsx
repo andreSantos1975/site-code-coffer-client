@@ -38,11 +38,12 @@ export const NavbarComponent = ({ logado, setLogado, onSignOut }) => {
       {/* Navbar */}
       <Navbar bg="light" variant="light" className="shadow fixed-top">
         <Container>
-          <Navbar.Brand>
-            <Link to="/">
-              <img src={logoImage} alt="Logo" className='logo-img' />
-            </Link>
-          </Navbar.Brand>
+
+          <Link to="/">
+          <img src={logoImage} alt="Logo" className='logo-img' style={{ width: '50px', height: 'auto' }} />
+
+          </Link>
+
           <Nav className="centered-links">
             <Nav.Link as={Link} to="/" className="nav-link-styled">Lar</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-link-styled">Sobre</Nav.Link>
